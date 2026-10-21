@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heureux Gagnant — Accompagnement dans vos démarches administratives à Lomé</title>
+  <meta name="description" content="Heureux Gagnant, à Lomé (Togo), vous accompagne dans vos démarches administratives : nationalité, passeport, duplicata de documents et constitution de dossiers.">
+  <meta name="theme-color" content="#00362a">
+  <link rel="icon" type="image/svg+xml" href="assets/svg/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <!-- Sprite d'icônes SVG (style trait, cohérent sur tout le site) -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true" focusable="false">
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 22V4"/><path d="M4 4c3-2 5-1 8 0s5 1 8 0v10c-3 1-5 1-8 0s-5-1-8 0"/></symbol>
+    <symbol id="i-passport" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><circle cx="12" cy="10" r="4"/><path d="M8 10h8M12 6v8M9 18h6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.900a2 2 0 0 1-1.690-.9L9.600 3.900A2 2 0 0 0 7.930 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.920v3a2 2 0 0 1-2.180 2 19.790 19.790 0 0 1-8.630-3.070 19.500 19.500 0 0 1-6-6 19.790 19.790 0 0 1-3.070-8.670A2 2 0 0 1 4.110 2h3a2 2 0 0 1 2 1.720c.13.960.36 1.900.7 2.810a2 2 0 0 1-.45 2.110L8.090 9.910a16 16 0 0 0 6 6l1.270-1.270a2 2 0 0 1 2.110-.45c.91.340 1.850.57 2.810.7A2 2 0 0 1 22 16.920z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.970 5.700a1.940 1.940 0 0 1-2.060 0L2 7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M7.900 20A9 9 0 1 0 4 16.100L2 22z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.500 7.500-7.660 8.950a1 1 0 0 1-.67-.01C7.500 20.500 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.500-1.200 6.240-2.720a1.170 1.170 0 0 1 1.520 0C14.510 3.810 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+    <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.700 1.500-2.500 1-.9 1.500-2.200 1.500-3.500A6 6 0 0 0 6 8c0 1 .2 2.200 1.500 3.500.7.700 1.300 1.500 1.500 2.500"/><path d="M9 18h6M10 22h4"/></symbol>
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16.240 7.760-1.800 5.400-5.400 1.800 1.800-5.400z"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.490-1.460 3-3.210 3-5.500A5.500 5.500 0 0 0 16.500 3c-1.760 0-3 .5-4.500 2-1.500-1.500-2.740-2-4.500-2A5.500 5.500 0 0 0 2 8.500c0 2.300 1.500 4.050 3 5.500l7 7z"/></symbol>
+  </svg>
+
+  <!-- ============ EN-TÊTE ============ -->
+  <header class="site-header" id="haut">
+    <div class="container header-inner">
+      <a class="brand" href="#accueil" aria-label="Heureux Gagnant — accueil">
+        <img src="assets/svg/logo.svg" alt="" width="40" height="40">
+        <span class="brand-text">Heureux <em>Gagnant</em></span>
+      </a>
+
+      <nav class="main-nav" id="menu" aria-label="Navigation principale">
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#presentation">Présentation</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#etapes">Comment ça marche</a></li>
+          <li><a href="#pourquoi">Pourquoi nous</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn-gold nav-cta" href="#contact">Nous contacter</a>
+      </nav>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
+        <svg class="icon icon-open"><use href="#i-menu"/></svg>
+        <svg class="icon icon-close"><use href="#i-x"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="accueil" aria-labelledby="hero-titre">
+      <div class="hero-deco" aria-hidden="true">
+        <svg class="deco deco-1" viewBox="0 0 200 200"><circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 6"/></svg>
+        <svg class="deco deco-2" viewBox="0 0 120 120"><path d="M10 60h100M60 10v100" stroke="currentColor" stroke-width="1" fill="none"/><circle cx="60" cy="60" r="6" fill="currentColor"/></svg>
+      </div>
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Démarches administratives · Lomé, Togo</p>
+          <h1 id="hero-titre">Vos démarches administratives, <span>comprises et préparées avec soin.</span></h1>
+          <p class="lead">Heureux Gagnant vous accompagne pour la nationalité, le passeport, les duplicata de documents et la constitution de vos dossiers. Une assistance personnalisée, des explications claires et une vraie disponibilité à chaque étape.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#services">Découvrir nos services <svg class="icon"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-outline" href="#contact">Contacter notre équipe</a>
+          </div>
+          <ul class="hero-points">
+            <li><svg class="icon"><use href="#i-check"/></svg> Accompagnement personnalisé</li>
+            <li><svg class="icon"><use href="#i-check"/></svg> Explications claires</li>
+            <li><svg class="icon"><use href="#i-check"/></svg> Transparence</li>
+          </ul>
+        </div>
+
+        <figure class="hero-visual reveal">
+          <div class="hero-frame">
+            <img src="assets/images/hero-documents.svg" width="900" height="1000" fetchpriority="high"
+                 alt="Illustration d’un passeport togolais à couverture verte, d’un certificat fictif marqué spécimen et d’un dossier posés sur un bureau en bois clair">
+          </div>
+          <figcaption class="visually-hidden">Illustration : passeport et documents fictifs, sans aucune donnée personnelle. Heureux Gagnant n’est pas une administration publique.</figcaption>
+          <div class="float-badge" aria-hidden="true">
+            <svg class="icon"><use href="#i-shield"/></svg>
+            <span>Dossiers préparés avec rigueur</span>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ PRÉSENTATION ============ -->
+    <section class="section" id="presentation" aria-labelledby="pres-titre">
+      <div class="container narrow">
+        <div class="section-head reveal">
+          <p class="eyebrow">Qui sommes-nous</p>
+          <h2 id="pres-titre">Un interlocuteur à votre écoute</h2>
+        </div>
+        <div class="pres-grid">
+          <p class="reveal">Heureux Gagnant est une entreprise basée à Lomé qui aide particuliers et familles à comprendre et préparer leurs démarches administratives. Les procédures peuvent sembler complexes : notre rôle est de vous expliquer ce qui est demandé, de vous aider à organiser vos pièces et à constituer un dossier clair.</p>
+          <p class="reveal">Nous intervenons en accompagnement. Les décisions et les délais de traitement relèvent des autorités compétentes ; nous vous en informons honnêtement, sans promesse que nous ne pourrions pas tenir.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section section-soft" id="services" aria-labelledby="serv-titre">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Nos services</p>
+          <h2 id="serv-titre">Une assistance adaptée à chaque démarche</h2>
+          <p class="sub">Choisissez la prestation qui correspond à votre besoin et contactez-nous directement à son sujet.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <span class="card-icon"><svg class="icon"><use href="#i-flag"/></svg></span>
+            <h3>Démarches liées à la nationalité</h3>
+            <p>Un accompagnement pour comprendre les pièces à réunir et préparer votre dossier de nationalité.</p>
+            <button class="btn btn-link" type="button" data-service="Démarches liées à la nationalité">Demander des informations <svg class="icon"><use href="#i-arrow"/></svg></button>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon"><svg class="icon"><use href="#i-passport"/></svg></span>
+            <h3>Assistance pour le passeport</h3>
+            <p>Une aide pour vos demandes de passeport : informations nécessaires, documents et préparation du dossier.</p>
+            <button class="btn btn-link" type="button" data-service="Assistance pour le passeport">Demander des informations <svg class="icon"><use href="#i-arrow"/></svg></button>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon"><svg class="icon"><use href="#i-copy"/></svg></span>
+            <h3>Demande de duplicata</h3>
+            <p>Un accompagnement pour les démarches de duplicata de documents administratifs perdus ou détériorés.</p>
+            <button class="btn btn-link" type="button" data-service="Demande de duplicata">Demander des informations <svg class="icon"><use href="#i-arrow"/></svg></button>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon"><svg class="icon"><use href="#i-folder"/></svg></span>
+            <h3>Constitution de dossiers administratifs</h3>
+            <p>Une aide à la constitution et à l’organisation de vos dossiers, pour qu’ils soient complets et bien présentés.</p>
+            <button class="btn btn-link" type="button" data-service="Constitution de dossiers administratifs">Demander des informations <svg class="icon"><use href="#i-arrow"/></svg></button>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon"><svg class="icon"><use href="#i-layers"/></svg></span>
+            <h3>Autres démarches administratives</h3>
+            <p>Une autre démarche en tête ? Décrivez votre besoin, nous vous dirons si nous pouvons vous accompagner.</p>
+            <button class="btn btn-link" type="button" data-service="Autres démarches administratives">Demander des informations <svg class="icon"><use href="#i-arrow"/></svg></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMMENT ÇA MARCHE ============ -->
+    <section class="section" id="etapes" aria-labelledby="etapes-titre">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Comment ça marche ?</p>
+          <h2 id="etapes-titre">Cinq étapes simples</h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal"><span class="step-num">1</span><span class="step-icon"><svg class="icon"><use href="#i-compass"/></svg></span><h3>Vous choisissez</h3><p>Vous sélectionnez le service qui correspond à votre besoin.</p></li>
+          <li class="step reveal"><span class="step-num">2</span><span class="step-icon"><svg class="icon"><use href="#i-message"/></svg></span><h3>Vous nous contactez</h3><p>Par le formulaire, par WhatsApp ou par téléphone.</p></li>
+          <li class="step reveal"><span class="step-num">3</span><span class="step-icon"><svg class="icon"><use href="#i-clipboard"/></svg></span><h3>Nous précisons</h3><p>Nous vous indiquons les informations et documents nécessaires.</p></li>
+          <li class="step reveal"><span class="step-num">4</span><span class="step-icon"><svg class="icon"><use href="#i-folder"/></svg></span><h3>Nous vous accompagnons</h3><p>Vous êtes aidé dans la préparation de votre dossier.</p></li>
+          <li class="step reveal"><span class="step-num">5</span><span class="step-icon"><svg class="icon"><use href="#i-bulb"/></svg></span><h3>Nous expliquons la suite</h3><p>Les prochaines étapes de la démarche vous sont détaillées.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ POURQUOI ============ -->
+    <section class="section section-dark" id="pourquoi" aria-labelledby="pourquoi-titre">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow eyebrow-gold">Pourquoi choisir Heureux Gagnant ?</p>
+          <h2 id="pourquoi-titre">Un accompagnement humain et clair</h2>
+        </div>
+        <div class="why-grid">
+          <div class="why reveal"><svg class="icon"><use href="#i-user"/></svg><h3>Assistance personnalisée</h3><p>Chaque situation est écoutée et traitée individuellement.</p></div>
+          <div class="why reveal"><svg class="icon"><use href="#i-bulb"/></svg><h3>Explications claires</h3><p>Vous comprenez chaque démarche, sans jargon inutile.</p></div>
+          <div class="why reveal"><svg class="icon"><use href="#i-heart"/></svg><h3>Adapté à vos besoins</h3><p>L’accompagnement s’ajuste à votre situation et à votre rythme.</p></div>
+          <div class="why reveal"><svg class="icon"><use href="#i-message"/></svg><h3>Communication accessible</h3><p>Vous nous joignez facilement et recevez des réponses compréhensibles.</p></div>
+          <div class="why reveal"><svg class="icon"><use href="#i-clipboard"/></svg><h3>Dossiers soignés</h3><p>Une attention particulière portée à la préparation de vos pièces.</p></div>
+        </div>
+        <p class="notice reveal">Heureux Gagnant est un service d’accompagnement. Nous ne garantissons ni l’obtention d’une nationalité, ni celle d’un passeport ou d’un document : la décision appartient aux autorités compétentes.</p>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq" aria-labelledby="faq-titre">
+      <div class="container narrow">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Questions fréquentes</p>
+          <h2 id="faq-titre">Vos questions, nos réponses</h2>
+        </div>
+        <div class="faq reveal">
+          <div class="faq-item">
+            <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-1"><span>Quels services proposez-vous ?</span><svg class="icon"><use href="#i-chevron"/></svg></button></h3>
+            <div class="faq-a" id="faq-1" role="region" hidden><div><p>Nous accompagnons les démarches liées à la nationalité, les demandes de passeport, les duplicata de documents, la constitution de dossiers administratifs et d’autres démarches selon vos besoins.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-2"><span>Quels documents dois-je préparer ?</span><svg class="icon"><use href="#i-chevron"/></svg></button></h3>
+            <div class="faq-a" id="faq-2" role="region" hidden><div><p>Cela dépend de la démarche et de votre situation. Après votre prise de contact, nous vous précisons les informations et les pièces à réunir.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-3"><span>Comment se déroule l’accompagnement ?</span><svg class="icon"><use href="#i-chevron"/></svg></button></h3>
+            <div class="faq-a" id="faq-3" role="region" hidden><div><p>Vous nous contactez, nous faisons le point sur votre besoin, puis nous vous aidons à préparer votre dossier et vous expliquons les étapes suivantes.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-4"><span>Quels sont les délais ?</span><svg class="icon"><use href="#i-chevron"/></svg></button></h3>
+            <div class="faq-a" id="faq-4" role="region" hidden><div><p>Les délais dépendent de la démarche et des autorités compétentes. Nous ne pouvons pas les garantir, mais nous vous donnons les informations dont nous disposons.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-5"><span>Comment vous contacter ?</span><svg class="icon"><use href="#i-chevron"/></svg></button></h3>
+            <div class="faq-a" id="faq-5" role="region" hidden><div><p>Utilisez le formulaire de contact ci-dessous, ou les boutons WhatsApp et téléphone lorsqu’ils sont disponibles.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-soft" id="contact" aria-labelledby="contact-titre">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-titre">Parlons de votre démarche</h2>
+          <p class="sub">Décrivez votre besoin : nous reviendrons vers vous pour préciser les prochaines étapes.</p>
+        </div>
+
+        <div class="contact-grid">
+          <form class="form reveal" id="contact-form" novalidate>
+            <div class="field">
+              <label for="nom">Nom et prénom <span aria-hidden="true">*</span></label>
+              <input id="nom" name="nom" type="text" autocomplete="name" required aria-describedby="nom-err">
+              <p class="error" id="nom-err" role="alert"></p>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="tel">Téléphone <span aria-hidden="true">*</span></label>
+                <input id="tel" name="telephone" type="tel" autocomplete="tel" inputmode="tel" required aria-describedby="tel-err">
+                <p class="error" id="tel-err" role="alert"></p>
+              </div>
+              <div class="field">
+                <label for="email">E-mail <small>(facultatif)</small></label>
+                <input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-err">
+                <p class="error" id="email-err" role="alert"></p>
+              </div>
+            </div>
+            <div class="field">
+              <label for="service">Service concerné <span aria-hidden="true">*</span></label>
+              <div class="select-wrap">
+                <select id="service" name="service" required aria-describedby="service-err">
+                  <option value="">Choisissez un service</option>
+                  <option>Démarches liées à la nationalité</option>
+                  <option>Assistance pour le passeport</option>
+                  <option>Demande de duplicata</option>
+                  <option>Constitution de dossiers administratifs</option>
+                  <option>Autres démarches administratives</option>
+                </select>
+                <svg class="icon"><use href="#i-chevron"/></svg>
+              </div>
+              <p class="error" id="service-err" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="message">Votre message <span aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="5" required aria-describedby="message-err"></textarea>
+              <p class="error" id="message-err" role="alert"></p>
+            </div>
+            <p class="hint">Ne transmettez pas de numéros de documents ni de données sensibles par ce formulaire : nous vous indiquerons comment procéder.</p>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit" id="submit-btn" data-mode="auto">
+                <span class="btn-label">Envoyer ma demande</span>
+                <span class="spinner" aria-hidden="true"></span>
+              </button>
+            </div>
+            <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+          </form>
+
+          <aside class="contact-side reveal" aria-label="Autres moyens de contact">
+            <h3>Autres moyens de nous joindre</h3>
+            <p class="side-note" id="contact-unset" hidden>Les coordonnées directes seront affichées ici dès qu’elles seront renseignées dans <code>config.js</code>.</p>
+            <ul class="contact-list">
+              <li><svg class="icon"><use href="#i-pin"/></svg><div><strong>Localisation</strong><span id="c-adresse">Lomé, Togo</span></div></li>
+              <li id="c-tel-li" hidden><svg class="icon"><use href="#i-phone"/></svg><div><strong>Téléphone</strong><a id="c-tel" href="#"></a></div></li>
+              <li id="c-mail-li" hidden><svg class="icon"><use href="#i-mail"/></svg><div><strong>E-mail</strong><a id="c-mail" href="#"></a></div></li>
+            </ul>
+            <div class="side-actions">
+              <a class="btn btn-whatsapp" id="btn-whatsapp" href="#contact" hidden target="_blank" rel="noopener"><svg class="icon"><use href="#i-chat"/></svg> Écrire sur WhatsApp</a>
+              <a class="btn btn-outline" id="btn-call" href="#contact" hidden><svg class="icon"><use href="#i-phone"/></svg> Appeler</a>
+              <a class="btn btn-outline" id="btn-map" href="#contact" hidden target="_blank" rel="noopener"><svg class="icon"><use href="#i-pin"/></svg> Voir sur la carte</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ PIED DE PAGE ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#accueil" aria-label="Heureux Gagnant — retour en haut">
+          <img src="assets/svg/logo.svg" alt="" width="40" height="40">
+          <span class="brand-text">Heureux <em>Gagnant</em></span>
+        </a>
+        <p>Accompagnement dans les démarches administratives, à Lomé (Togo).</p>
+        <ul class="socials" id="socials" aria-label="Réseaux sociaux"></ul>
+      </div>
+      <nav aria-label="Pied de page : navigation">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#presentation">Présentation</a></li>
+          <li><a href="#etapes">Comment ça marche</a></li>
+          <li><a href="#pourquoi">Pourquoi nous</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Pied de page : services">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Nationalité</a></li>
+          <li><a href="#services">Passeport</a></li>
+          <li><a href="#services">Duplicata</a></li>
+          <li><a href="#services">Dossiers administratifs</a></li>
+          <li><a href="#services">Autres démarches</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-contact" id="footer-contact"><li>Lomé, Togo</li></ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="annee"></span> Heureux Gagnant. Tous droits réservés.</p>
+      <p><button class="link-btn" type="button" data-dialog="dlg-legal">Mentions légales</button> · <button class="link-btn" type="button" data-dialog="dlg-privacy">Confidentialité</button></p>
+    </div>
+  </footer>
+
+  <!-- Boîtes de dialogue légales -->
+  <dialog id="dlg-legal" class="dialog" aria-labelledby="dlg-legal-t">
+    <form method="dialog"><button class="dialog-close" aria-label="Fermer"><svg class="icon"><use href="#i-x"/></svg></button></form>
+    <h2 id="dlg-legal-t">Mentions légales</h2>
+    <p><strong>Éditeur du site :</strong> Heureux Gagnant, Lomé, Togo.</p>
+    <p><strong>Nature de l’activité :</strong> accompagnement et assistance dans les démarches administratives. Heureux Gagnant n’est pas une administration publique et ne délivre aucun document officiel.</p>
+    <p><strong>Responsable de la publication, numéro d’immatriculation et hébergeur :</strong> à compléter par l’entreprise avant la mise en ligne (informations non fournies à ce jour).</p>
+  </dialog>
+  <dialog id="dlg-privacy" class="dialog" aria-labelledby="dlg-priv-t">
+    <form method="dialog"><button class="dialog-close" aria-label="Fermer"><svg class="icon"><use href="#i-x"/></svg></button></form>
+    <h2 id="dlg-priv-t">Confidentialité</h2>
+    <p>Les informations saisies dans le formulaire (nom, téléphone, e-mail, service, message) servent uniquement à répondre à votre demande.</p>
+    <p>Elles ne sont ni vendues ni utilisées à d’autres fins. Ce site n’utilise pas de cookies de suivi publicitaire.</p>
+    <p>Si vous choisissez l’envoi par WhatsApp, votre message est transmis via ce service, soumis à ses propres conditions. Pour toute demande d’accès ou de suppression de vos données, contactez l’entreprise par les moyens indiqués sur ce site.</p>
+    <p>Évitez de transmettre des numéros de documents ou des pièces d’identité via le formulaire : nous vous indiquerons le canal adapté.</p>
+  </dialog>
+
+  <script src="config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

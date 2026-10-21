@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Logo Heureux Gagnant">
+  <defs>
+    <linearGradient id="lb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#008560"/><stop offset="1" stop-color="#00362a"/></linearGradient>
+    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe27a"/><stop offset="1" stop-color="#ffce00"/></linearGradient>
+  </defs>
+  <path d="M32 3 55 12v19c0 14-9.5 24.5-23 30C18.5 55.5 9 45 9 31V12z" fill="url(#lb)"/>
+  <path d="M32 3 55 12v19c0 14-9.5 24.5-23 30C18.5 55.5 9 45 9 31V12z" fill="none" stroke="url(#lg)" stroke-width="2"/>
+  <path d="M21 33.500 29 41.500 44 24" fill="none" stroke="url(#lg)" stroke-width="5.500" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
