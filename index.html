@@ -38,7 +38,9 @@
     <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.700 1.500-2.500 1-.9 1.500-2.200 1.500-3.500A6 6 0 0 0 6 8c0 1 .2 2.200 1.500 3.500.7.700 1.300 1.500 1.500 2.500"/><path d="M9 18h6M10 22h4"/></symbol>
     <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16.240 7.760-1.800 5.400-5.400 1.800 1.800-5.400z"/></symbol>
     <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.490-1.460 3-3.210 3-5.500A5.500 5.500 0 0 0 16.500 3c-1.760 0-3 .5-4.500 2-1.500-1.500-2.740-2-4.500-2A5.500 5.500 0 0 0 2 8.500c0 2.300 1.500 4.050 3 5.500l7 7z"/></symbol>
+    <symbol id="i-idcard" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="8" cy="11" r="2.5"/><path d="M5 17c.6-1.8 1.7-2.5 3-2.5s2.4.7 3 2.5M14 10h5M14 13h5M14 16h3"/></symbol>
   </svg>
+
 
   <!-- ============ EN-TÊTE ============ -->
   <header class="site-header" id="haut">
@@ -128,39 +130,230 @@
         </div>
 
         <div class="cards">
-          <article class="card reveal">
-            <span class="card-icon"><svg class="icon"><use href="#i-flag"/></svg></span>
-            <h3>Démarches liées à la nationalité</h3>
-            <p>Un accompagnement pour comprendre les pièces à réunir et préparer votre dossier de nationalité.</p>
-            <button class="btn btn-link" type="button" data-service="Démarches liées à la nationalité">Demander des informations <svg class="icon"><use href="#i-arrow"/></svg></button>
+          <!-- ============ SERVICE 1 : NATIONALITÉ ============ -->
+          <article class="card card-service reveal">
+            <div class="card-img">
+              <img src="assets/images/nationnalite.jpeg"
+                   alt="Illustration des pièces à réunir pour une démarche de nationalité"
+                   width="640" height="360" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="card-icon"><svg class="icon"><use href="#i-flag"/></svg></span>
+              <h3>Démarches liées à la nationalité</h3>
+              <p>Accompagnement pour comprendre les pièces à réunir et préparer votre dossier de nationalité.</p>
+
+              <details class="card-details">
+                <summary>Voir les pièces à fournir <svg class="icon"><use href="#i-chevron"/></svg></summary>
+                <ul class="piece-list">
+                  <li>Naissance originale + photocopies légalisées</li>
+                  <li>Nationalité du père, du frère ou de la sœur de même père <em>(original + photocopies légalisées)</em> — ou nationalité de la mère, du frère ou de la sœur de même mère <em>(original + photocopies légalisées)</em></li>
+                  <li>Quittance : <strong>5 000 F</strong></li>
+                  <li>Une photo passeport fond blanc</li>
+                </ul>
+              </details>
+
+              <button class="btn btn-link" type="button" data-service="Démarches liées à la nationalité">
+                Demander des informations <svg class="icon"><use href="#i-arrow"/></svg>
+              </button>
+            </div>
           </article>
-          <article class="card reveal">
-            <span class="card-icon"><svg class="icon"><use href="#i-passport"/></svg></span>
-            <h3>Assistance pour le passeport</h3>
-            <p>Une aide pour vos demandes de passeport : informations nécessaires, documents et préparation du dossier.</p>
-            <button class="btn btn-link" type="button" data-service="Assistance pour le passeport">Demander des informations <svg class="icon"><use href="#i-arrow"/></svg></button>
+
+          <!-- ============ SERVICE 2 : PASSEPORT ============ -->
+          <article class="card card-service reveal">
+            <div class="card-img">
+              <img src="assets/images/passport.jpeg"
+                   alt="Illustration des pièces à réunir pour une demande de passeport"
+                   width="640" height="360" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="card-icon"><svg class="icon"><use href="#i-passport"/></svg></span>
+              <h3>Assistance pour le passeport</h3>
+              <p>Aide à la demande en ligne et préparation des pièces pour votre passeport.</p>
+
+              <details class="card-details">
+                <summary>Voir les pièces à fournir <svg class="icon"><use href="#i-chevron"/></svg></summary>
+                <ol class="piece-list">
+                  <li>Original du certificat de nationalité + une photocopie légalisée (ou duplicata)</li>
+                  <li>Original du certificat de naissance + une photocopie légalisée</li>
+                  <li>Attestation de personnes à prévenir (adultes) ou attestation parentale (mineurs)</li>
+                  <li>Une photocopie simple de la carte d'identité</li>
+                  <li>Certificat de mariage pour les femmes légalement mariées</li>
+                  <li>Deux photos passeport fond blanc</li>
+                  <li>Une photocopie simple de preuve de profession</li>
+                  <li>Quittance : <strong>30 000 F</strong></li>
+                  <li>Durée : <strong>deux semaines</strong></li>
+                  <li><em>Renouvellement :</em> mêmes pièces + photocopie simple de l'ancien passeport</li>
+                </ol>
+                <p class="card-note">
+                  <strong>NB :</strong> la demande se fait en ligne. Nous vous aidons <strong>uniquement</strong> à faire la demande en ligne ; ensuite, vous vous rendez au service des passeports pour le dépôt.
+                </p>
+              </details>
+
+              <button class="btn btn-link" type="button" data-service="Assistance pour le passeport">
+                Demander des informations <svg class="icon"><use href="#i-arrow"/></svg>
+              </button>
+            </div>
           </article>
-          <article class="card reveal">
-            <span class="card-icon"><svg class="icon"><use href="#i-copy"/></svg></span>
-            <h3>Demande de duplicata</h3>
-            <p>Un accompagnement pour les démarches de duplicata de documents administratifs perdus ou détériorés.</p>
-            <button class="btn btn-link" type="button" data-service="Demande de duplicata">Demander des informations <svg class="icon"><use href="#i-arrow"/></svg></button>
+
+          <!-- ============ SERVICE 3 : DUPLICATA ============ -->
+          <article class="card card-service reveal">
+            <div class="card-img">
+              <img src="assets/images/duplicata.jpeg"
+                   alt="Illustration des pièces à réunir pour une demande de duplicata"
+                   width="640" height="360" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="card-icon"><svg class="icon"><use href="#i-copy"/></svg></span>
+              <h3>Demande de duplicata</h3>
+              <p>Accompagnement pour les duplicata de documents administratifs perdus ou détériorés.</p>
+
+              <details class="card-details">
+                <summary>Voir les pièces à fournir <svg class="icon"><use href="#i-chevron"/></svg></summary>
+                <ol class="piece-list">
+                  <li>Original de l'acte de naissance</li>
+                  <li>Original du certificat de nationalité</li>
+                  <li>Certificat de test de groupages</li>
+                  <li>Acte de mariage pour les femmes mariées</li>
+                  <li>Certificat de divorce pour les femmes divorcées</li>
+                  <li>Acte de décès du conjoint pour les veuves</li>
+                </ol>
+                <p class="card-note">
+                  <strong>NB :</strong> cette procédure n'est pas encore matérialisée. Veuillez vous rendre au commissariat le plus proche pour faire votre demande.
+                </p>
+                <p class="card-note">Prix : <strong>5 000 F</strong></p>
+              </details>
+
+              <button class="btn btn-link" type="button" data-service="Demande de duplicata">
+                Demander des informations <svg class="icon"><use href="#i-arrow"/></svg>
+              </button>
+            </div>
           </article>
-          <article class="card reveal">
-            <span class="card-icon"><svg class="icon"><use href="#i-folder"/></svg></span>
-            <h3>Constitution de dossiers administratifs</h3>
-            <p>Une aide à la constitution et à l’organisation de vos dossiers, pour qu’ils soient complets et bien présentés.</p>
-            <button class="btn btn-link" type="button" data-service="Constitution de dossiers administratifs">Demander des informations <svg class="icon"><use href="#i-arrow"/></svg></button>
+
+          <!-- ============ SERVICE 3bis : CARTE D'IDENTITÉ ============ -->
+<article class="card card-service reveal">
+  <div class="card-img">
+    <img src="assets/images/cni.jpeg"
+         alt="Illustration des pièces à réunir pour une demande de carte d'identité"
+         width="640" height="360" loading="lazy">
+  </div>
+  <div class="card-body">
+    <span class="card-icon"><svg class="icon"><use href="#i-idcard"/></svg></span>
+    <h3>Carte d'identité</h3>
+    <p>Accompagnement pour la demande ou le renouvellement de votre carte nationale d'identité.</p>
+
+    <details class="card-details">
+      <summary>Voir les pièces à fournir <svg class="icon"><use href="#i-chevron"/></svg></summary>
+      <ol class="piece-list">
+        <li>Original de l'acte de naissance</li>
+        <li>Original du certificat de nationalité</li>
+        <li>Deux photos passeport fond blanc</li>
+        <li>Une photocopie simple de l'ancienne carte (en cas de renouvellement)</li>
+        <li>Quittance : <strong>à préciser selon la démarche</strong></li>
+      </ol>
+      <p class="card-note">
+        <strong>NB :</strong> les pièces exactes peuvent varier selon votre situation. Contactez-nous pour une liste personnalisée avant de vous déplacer.
+      </p>
+    </details>
+
+    <button class="btn btn-link" type="button" data-service="Carte d'identité">
+      Demander des informations <svg class="icon"><use href="#i-arrow"/></svg>
+    </button>
+  </div>
+</article>
+
+          <!-- ============ SERVICE 4 : DOSSIERS ============ -->
+          <article class="card card-service reveal">
+            <div class="card-img">
+              <img src="assets/images/constitution.jpeg"
+                   alt="Illustration d'un dossier administratif organisé"
+                   width="640" height="360" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="card-icon"><svg class="icon"><use href="#i-folder"/></svg></span>
+              <h3>Constitution de dossiers administratifs</h3>
+              <p>Aide à la constitution et à l'organisation de vos dossiers, pour qu'ils soient complets et bien présentés.</p>
+              <button class="btn btn-link" type="button" data-service="Constitution de dossiers administratifs">
+                Demander des informations <svg class="icon"><use href="#i-arrow"/></svg>
+              </button>
+            </div>
           </article>
-          <article class="card reveal">
-            <span class="card-icon"><svg class="icon"><use href="#i-layers"/></svg></span>
-            <h3>Autres démarches administratives</h3>
-            <p>Une autre démarche en tête ? Décrivez votre besoin, nous vous dirons si nous pouvons vous accompagner.</p>
-            <button class="btn btn-link" type="button" data-service="Autres démarches administratives">Demander des informations <svg class="icon"><use href="#i-arrow"/></svg></button>
+
+          <!-- ============ SERVICE 5 : AUTRES ============ -->
+          <article class="card card-service reveal">
+            <div class="card-img">
+              <img src="assets/images/WhatsApp Image 2026-10-21 at 00.19.32.jpeg"
+                   alt="Illustration d'autres démarches administratives"
+                   width="640" height="360" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="card-icon"><svg class="icon"><use href="#i-layers"/></svg></span>
+              <h3>Autres démarches administratives</h3>
+              <p>Une autre démarche en tête ? Décrivez votre besoin, nous vous dirons si nous pouvons vous accompagner.</p>
+              <button class="btn btn-link" type="button" data-service="Autres démarches administratives">
+                Demander des informations <svg class="icon"><use href="#i-arrow"/></svg>
+              </button>
+            </div>
           </article>
         </div>
       </div>
     </section>
+
+    <!-- ============ MODÈLES D'ATTESTATIONS (PASSEPORT) ============ -->
+<section class="section section-soft" id="modeles" aria-labelledby="modeles-titre">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow">Documents utiles · Passeport</p>
+      <h2 id="modeles-titre">Modèles d'attestations à télécharger</h2>
+      <p class="sub">Deux documents souvent demandés pour une demande de passeport. Cliquez sur un modèle pour l'ouvrir en grand et l'imprimer.</p>
+    </div>
+
+    <div class="modeles-grid">
+      <!-- Modèle 1 : Autorisation parentale -->
+      <figure class="modele reveal">
+        <a class="modele-thumb"
+           href="assets/images/parentale.jpeg"
+           target="_blank" rel="noopener"
+           aria-label="Ouvrir le modèle d'autorisation parentale en grand">
+          <img src="assets/images/parentale.jpeg"
+               alt="Modèle de fiche d'autorisation parentale pour un mineur"
+               width="640" height="820" loading="lazy">
+        </a>
+        <figcaption>
+          <h3>Autorisation parentale</h3>
+          <p>Pour les <strong>mineurs</strong> : autorisation signée par le parent ou tuteur légal.</p>
+          <a class="btn btn-link" href="assets/images/parentale.jpeg"
+             target="_blank" rel="noopener" download>
+            Télécharger le modèle <svg class="icon"><use href="#i-arrow"/></svg>
+          </a>
+        </figcaption>
+      </figure>
+
+      <!-- Modèle 2 : Personne à prévenir -->
+      <figure class="modele reveal">
+        <a class="modele-thumb"
+           href="assets/images/personne a prevenir.jpeg"
+           target="_blank" rel="noopener"
+           aria-label="Ouvrir le modèle d'attestation de personne à prévenir en grand">
+          <img src="assets/images/personne a prevenir.jpeg"
+               alt="Modèle d'attestation de personne à prévenir pour un adulte"
+               width="640" height="820" loading="lazy">
+        </a>
+        <figcaption>
+          <h3>Personne à prévenir</h3>
+          <p>Pour les <strong>adultes</strong> : coordonnées de la personne à contacter en cas de besoin.</p>
+          <a class="btn btn-link" href="assets/images/personne a prevenir.jpeg"
+             target="_blank" rel="noopener" download>
+            Télécharger le modèle <svg class="icon"><use href="#i-arrow"/></svg>
+          </a>
+        </figcaption>
+      </figure>
+    </div>
+
+    <p class="modele-note reveal">
+      <strong>À savoir :</strong> ces modèles sont fournis à titre indicatif pour vous aider à préparer vos pièces. Les autorités compétentes peuvent demander des informations complémentaires ou un format différent. En cas de doute, contactez-nous.
+    </p>
+  </div>
+</section>
 
     <!-- ============ COMMENT ÇA MARCHE ============ -->
     <section class="section" id="etapes" aria-labelledby="etapes-titre">
@@ -189,11 +382,11 @@
         <div class="why-grid">
           <div class="why reveal"><svg class="icon"><use href="#i-user"/></svg><h3>Assistance personnalisée</h3><p>Chaque situation est écoutée et traitée individuellement.</p></div>
           <div class="why reveal"><svg class="icon"><use href="#i-bulb"/></svg><h3>Explications claires</h3><p>Vous comprenez chaque démarche, sans jargon inutile.</p></div>
-          <div class="why reveal"><svg class="icon"><use href="#i-heart"/></svg><h3>Adapté à vos besoins</h3><p>L’accompagnement s’ajuste à votre situation et à votre rythme.</p></div>
+          <div class="why reveal"><svg class="icon"><use href="#i-heart"/></svg><h3>Adapté à vos besoins</h3><p>L'accompagnement s'ajuste à votre situation et à votre rythme.</p></div>
           <div class="why reveal"><svg class="icon"><use href="#i-message"/></svg><h3>Communication accessible</h3><p>Vous nous joignez facilement et recevez des réponses compréhensibles.</p></div>
           <div class="why reveal"><svg class="icon"><use href="#i-clipboard"/></svg><h3>Dossiers soignés</h3><p>Une attention particulière portée à la préparation de vos pièces.</p></div>
         </div>
-        <p class="notice reveal">Heureux Gagnant est un service d’accompagnement. Nous ne garantissons ni l’obtention d’une nationalité, ni celle d’un passeport ou d’un document : la décision appartient aux autorités compétentes.</p>
+        <p class="notice reveal">Heureux Gagnant est un service d'accompagnement. Nous ne garantissons ni l'obtention d'une nationalité, ni celle d'un passeport ou d'un document : la décision appartient aux autorités compétentes.</p>
       </div>
     </section>
 
@@ -207,23 +400,23 @@
         <div class="faq reveal">
           <div class="faq-item">
             <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-1"><span>Quels services proposez-vous ?</span><svg class="icon"><use href="#i-chevron"/></svg></button></h3>
-            <div class="faq-a" id="faq-1" role="region" hidden><div><p>Nous accompagnons les démarches liées à la nationalité, les demandes de passeport, les duplicata de documents, la constitution de dossiers administratifs et d’autres démarches selon vos besoins.</p></div></div>
+            <div class="faq-a" id="faq-1" role="region" hidden><div><p>Nous accompagnons les démarches liées à la nationalité, les demandes de passeport, les duplicata de documents, la constitution de dossiers administratifs et d'autres démarches selon vos besoins.</p></div></div>
           </div>
           <div class="faq-item">
             <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-2"><span>Quels documents dois-je préparer ?</span><svg class="icon"><use href="#i-chevron"/></svg></button></h3>
-            <div class="faq-a" id="faq-2" role="region" hidden><div><p>Cela dépend de la démarche et de votre situation. Après votre prise de contact, nous vous précisons les informations et les pièces à réunir.</p></div></div>
+            <div class="faq-a" id="faq-2" role="region" hidden><div><p>Cela dépend de la démarche et de votre situation. Consultez le détail des pièces dans chaque service ci-dessus, ou contactez-nous : nous vous préciserons les informations et les pièces à réunir.</p></div></div>
           </div>
           <div class="faq-item">
-            <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-3"><span>Comment se déroule l’accompagnement ?</span><svg class="icon"><use href="#i-chevron"/></svg></button></h3>
+            <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-3"><span>Comment se déroule l'accompagnement ?</span><svg class="icon"><use href="#i-chevron"/></svg></button></h3>
             <div class="faq-a" id="faq-3" role="region" hidden><div><p>Vous nous contactez, nous faisons le point sur votre besoin, puis nous vous aidons à préparer votre dossier et vous expliquons les étapes suivantes.</p></div></div>
           </div>
           <div class="faq-item">
             <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-4"><span>Quels sont les délais ?</span><svg class="icon"><use href="#i-chevron"/></svg></button></h3>
-            <div class="faq-a" id="faq-4" role="region" hidden><div><p>Les délais dépendent de la démarche et des autorités compétentes. Nous ne pouvons pas les garantir, mais nous vous donnons les informations dont nous disposons.</p></div></div>
+            <div class="faq-a" id="faq-4" role="region" hidden><div><p>Les délais dépendent de la démarche et des autorités compétentes. Pour le passeport, la durée indiquée est de deux semaines. Nous ne pouvons pas les garantir, mais nous vous donnons les informations dont nous disposons.</p></div></div>
           </div>
           <div class="faq-item">
             <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-5"><span>Comment vous contacter ?</span><svg class="icon"><use href="#i-chevron"/></svg></button></h3>
-            <div class="faq-a" id="faq-5" role="region" hidden><div><p>Utilisez le formulaire de contact ci-dessous, ou les boutons WhatsApp et téléphone lorsqu’ils sont disponibles.</p></div></div>
+            <div class="faq-a" id="faq-5" role="region" hidden><div><p>Utilisez le formulaire de contact ci-dessous, ou les boutons WhatsApp et téléphone lorsqu'ils sont disponibles.</p></div></div>
           </div>
         </div>
       </div>
@@ -290,7 +483,7 @@
 
           <aside class="contact-side reveal" aria-label="Autres moyens de contact">
             <h3>Autres moyens de nous joindre</h3>
-            <p class="side-note" id="contact-unset" hidden>Les coordonnées directes seront affichées ici dès qu’elles seront renseignées dans <code>config.js</code>.</p>
+            <p class="side-note" id="contact-unset" hidden>Les coordonnées directes seront affichées ici dès qu'elles seront renseignées dans <code>config.js</code>.</p>
             <ul class="contact-list">
               <li><svg class="icon"><use href="#i-pin"/></svg><div><strong>Localisation</strong><span id="c-adresse">Lomé, Togo</span></div></li>
               <li id="c-tel-li" hidden><svg class="icon"><use href="#i-phone"/></svg><div><strong>Téléphone</strong><a id="c-tel" href="#"></a></div></li>
@@ -355,16 +548,16 @@
     <form method="dialog"><button class="dialog-close" aria-label="Fermer"><svg class="icon"><use href="#i-x"/></svg></button></form>
     <h2 id="dlg-legal-t">Mentions légales</h2>
     <p><strong>Éditeur du site :</strong> Heureux Gagnant, Lomé, Togo.</p>
-    <p><strong>Nature de l’activité :</strong> accompagnement et assistance dans les démarches administratives. Heureux Gagnant n’est pas une administration publique et ne délivre aucun document officiel.</p>
-    <p><strong>Responsable de la publication, numéro d’immatriculation et hébergeur :</strong> à compléter par l’entreprise avant la mise en ligne (informations non fournies à ce jour).</p>
+    <p><strong>Nature de l'activité :</strong> accompagnement et assistance dans les démarches administratives. Heureux Gagnant n'est pas une administration publique et ne délivre aucun document officiel.</p>
+    <p><strong>Responsable de la publication, numéro d'immatriculation et hébergeur :</strong> à compléter par l'entreprise avant la mise en ligne (informations non fournies à ce jour).</p>
   </dialog>
   <dialog id="dlg-privacy" class="dialog" aria-labelledby="dlg-priv-t">
     <form method="dialog"><button class="dialog-close" aria-label="Fermer"><svg class="icon"><use href="#i-x"/></svg></button></form>
     <h2 id="dlg-priv-t">Confidentialité</h2>
     <p>Les informations saisies dans le formulaire (nom, téléphone, e-mail, service, message) servent uniquement à répondre à votre demande.</p>
-    <p>Elles ne sont ni vendues ni utilisées à d’autres fins. Ce site n’utilise pas de cookies de suivi publicitaire.</p>
-    <p>Si vous choisissez l’envoi par WhatsApp, votre message est transmis via ce service, soumis à ses propres conditions. Pour toute demande d’accès ou de suppression de vos données, contactez l’entreprise par les moyens indiqués sur ce site.</p>
-    <p>Évitez de transmettre des numéros de documents ou des pièces d’identité via le formulaire : nous vous indiquerons le canal adapté.</p>
+    <p>Elles ne sont ni vendues ni utilisées à d'autres fins. Ce site n'utilise pas de cookies de suivi publicitaire.</p>
+    <p>Si vous choisissez l'envoi par WhatsApp, votre message est transmis via ce service, soumis à ses propres conditions. Pour toute demande d'accès ou de suppression de vos données, contactez l'entreprise par les moyens indiqués sur ce site.</p>
+    <p>Évitez de transmettre des numéros de documents ou des pièces d'identité via le formulaire : nous vous indiquerons le canal adapté.</p>
   </dialog>
 
   <script src="config.js"></script>
